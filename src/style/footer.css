@@ -1,0 +1,52 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#ecd3cb;
+    padding: 20px 0px;
+    gap: 30px;
+}
+
+iframe {
+    width: 350px;
+    height: 150px;
+    border: none;
+}
+
+.contactMail {
+    display: flex;
+}
+
+.contactMail form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 375px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.btn-submit {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 20px;
+    box-shadow: 4px 5px 12px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 5px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 5px 12px 0px rgba(0,0,0,0.75);
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+transform: scale(0.95);
+}
