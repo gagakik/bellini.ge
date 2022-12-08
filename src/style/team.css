@@ -1,12 +1,15 @@
-.about {
-    display: flex;
-    flex-direction: column;
+.team {
+  display: grid;
+    grid-template-columns: auto;
     margin: 50px 0px;
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(236,211,203, .3);
     border-radius: 15px;
     overflow: hidden;
     position: relative;
     backdrop-filter: blur(4px);
     padding: 30px;
+    justify-content: center;
+    width: 100%;
 }
+

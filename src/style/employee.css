@@ -1,0 +1,81 @@
+.employees {
+    display: grid;
+    display: grid;
+    grid-template-columns: 375px 375px 375px;
+    grid-template-rows: 375px 375px 375px;
+    gap: 20px;
+}
+
+.employee {
+    background: rgb(27, 27, 27, .5);
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 5px 5px 20px black;
+    transition: 0.5s;
+}
+
+.employee img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+}
+
+.person {
+    position: absolute;
+    padding: 15px;
+    left: 20;
+    top: 150px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.employee-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+}
+
+.employee img:hover {
+    transform: rotate(-2deg);
+}
+
+
+.employee:hover {
+    width: 375px;
+    height: 375px;
+    border-radius: 10px;
+    border-top-left-radius: 100px;
+    visibility: visible;
+}
+
+.employee:hover .person {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.employee-post {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.employee-about {
+font-size: 0.7rem;
+font-weight: 600;
+color: antiquewhite;
+}
+

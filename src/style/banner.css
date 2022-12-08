@@ -1,0 +1,8 @@
+.banner {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 500px;
+    background-color: antiquewhite;
+}

@@ -4,6 +4,7 @@ import '../style/footer.css'
 
 const Footer = () => {
     return (
+        <div className='fbg'>
         <div className='container'>
             <div className='footer'>
             <iframe className='google' title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m
@@ -27,6 +28,7 @@ DoeGDmA!5e0!3m2!1ska!2sge!4v1645613685555!5m2!1ska!2sge"></iframe>
  </div>
  </div>
  </div>
+        </div>
         </div>
     );
 }

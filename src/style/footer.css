@@ -1,25 +1,41 @@
 .footer {
+
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    background-color:#ecd3cb;
     padding: 20px 0px;
     gap: 30px;
+    justify-content: space-between;
+}
+
+.fbg {
+    width: 100%;
+    background-color:#ecd3cb;
+    margin-top: 30px;
+    height: 280px;
+    position: relative;
 }
 
 iframe {
     width: 350px;
-    height: 150px;
+    height: 200px;
     border: none;
 }
 
 .contactMail {
     display: flex;
 }
+
+.contactMail input{
+    font-size: 0.8rem;
+}
+
+.contactMail textarea {
+    font-size: 0.8rem;
+}
+
+
 
 .contactMail form {
     display: flex;
@@ -49,4 +65,56 @@ textarea {
 
 .btn-submit:hover {
 transform: scale(0.95);
+}
+
+.callmail {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobile a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.mailTel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mailTel a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.mailTel a:hover {
+    transform: scale(1.05);
+    color: gray;
+}
+
+.mobile a:hover {
+    transform: scale(1.05);
+    color: gray;
+}
+
+.callmail h3 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.callmail p {
+    font-size: 0.8rem;
+    font-weight: 600;
 }

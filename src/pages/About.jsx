@@ -1,8 +1,10 @@
 import React from 'react';
 import '../style/about.css'
+import Animation from '../components/animation'
 
 const About = () => {
     return (
+        <Animation>
         <div className='container'>
         <div className="about">
         <div className="box-about">
@@ -18,6 +20,7 @@ const About = () => {
   </div>
       </div>
       </div>
+      </Animation>
     );
 }
 

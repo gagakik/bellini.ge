@@ -6,7 +6,7 @@ nav{
     display: flex;
     gap: 20px;
     width: 100%;
-    margin-top: 30px;
+    padding: 5px 0px;
 }
 
 .navi {

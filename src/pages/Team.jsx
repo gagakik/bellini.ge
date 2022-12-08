@@ -1,10 +1,18 @@
 import React from 'react';
+import Employee from '../components/Employee'
+import '../style/team.css'
+import Animation from '../components/animation'
 
 const Team = () => {
+    
     return (
-        <div>
-            <h1>Team Page</h1>
+        <Animation>
+        <div className='container'>
+            <div className='team'>
+            <Employee/>
+            </div>
         </div>
+        </Animation>
     );
 }
 
