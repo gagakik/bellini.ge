@@ -8,6 +8,7 @@ import post from './cards'
 import blog from './blog'
 import home from './home'
 import teams from './teams'
+import gallery from './gallery'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -20,6 +21,7 @@ export default createSchema({
     post,
     blog,
     home,
-    teams
+    teams,
+    gallery
   ]),
 })

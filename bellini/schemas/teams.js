@@ -9,12 +9,9 @@ export default {
         type: 'string',
       },
       {
-        name: 'price',
-        title: 'Price',
+        name: 'position',
+        title: 'Position',
         type: 'string',
-        options: {
-            maxLength: 80,
-          },
       },
      
       {

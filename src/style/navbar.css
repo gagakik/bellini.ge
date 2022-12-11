@@ -1,5 +1,15 @@
 .navbar {
     display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li {
+ list-style-type: none;
 }
 
 nav{
@@ -7,6 +17,7 @@ nav{
     gap: 20px;
     width: 100%;
     padding: 5px 0px;
+    align-items: center;
 }
 
 .navi {
@@ -15,7 +26,7 @@ nav{
     font-weight: 600;
     font-size: 0.8rem;
     text-transform: uppercase;
-    transition: 0.2s;
+    transition: 0.4s;
     position: relative;
 }
 
@@ -39,27 +50,52 @@ nav{
 
 .navi:hover::after{
     transform: scale(1,1);
-
 }
 
-
+.burger {
+    visibility: hidden;
+}
+.close {
+    visibility: hidden;
+}
 @media screen and (max-width: 700px) {
-    .navbar {
+    .burger {
+        visibility: visible;
+        position: absolute;
+        left: 2rem;
+        top: 2rem;
+    }
+    .nav-menu {
+        display: flex;
         flex-direction: column;
+    }
+    .nav-menu ul {
+        flex-direction: column;
+        position: relative;
         align-items: center;
+        gap: 10px;
+        width: 300px;
     }
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
+    .nav-menu ul li {
+        text-align: center;
+        width: 300px;
+        padding: 10px 0px;
+        border: solid 1px gray;
+        background: rgb(27, 27, 27, .4);
     }
-.navi {
-    border: solid 1px gray;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-}
 
+    .close {
+        position: absolute;
+        left: 2rem;
+        top: 2rem;
+        visibility: visible;
+    }
+    .burger.active {
+        display: none;
+    }
 
+    .nav-menu.active {
+        display: none;
+    }
 }

@@ -1,9 +1,26 @@
+.team {
+    display: flex;
+      margin: 50px 0px;
+      min-height: 100vh;
+      background: rgb(236,211,203, .3);
+      border-radius: 15px;
+      overflow: hidden;
+      position: relative;
+      backdrop-filter: blur(4px);
+      padding: 30px;
+      justify-content: center;
+      width: 100%;
+  }
+
+
 .employees {
     display: grid;
-    display: grid;
-    grid-template-columns: 375px 375px 375px;
-    grid-template-rows: 375px 375px 375px;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-auto-rows: minmax(375px,1fr);
     gap: 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .employee {
@@ -39,6 +56,7 @@
     width: 100%;
     align-items: center;
     gap: 15px;
+    
 }
 
 
@@ -60,6 +78,7 @@
     border-radius: 10px;
     border-top-left-radius: 100px;
     visibility: visible;
+   
 }
 
 .employee:hover .person {
@@ -71,11 +90,24 @@
 .employee-post {
     font-size: 0.8rem;
     font-weight: 500;
+    transition: 1s;
+    visibility: hidden;
+}
+.employee:hover .employee-post {
+    visibility: visible;
 }
 
 .employee-about {
 font-size: 0.7rem;
 font-weight: 600;
 color: antiquewhite;
+transition: 1s;
+visibility: hidden;
+text-indent: 30px;
+text-align: justify;
+line-height: 1.5;
+}
+.employee:hover .employee-about {
+    visibility: visible;
 }
 

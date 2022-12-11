@@ -32,9 +32,7 @@ const Blog = () => {
               <img src={blog.mainImage.asset.url} alt={blog.mainImage.asset.alt} />
               <div className='blog-name'>
                 <h3 className='blog-title'>{blog.title}</h3>
-                <div className='blog-text-box'>
                  <p className='blog-text'>{blog.description}</p>
-                </div>
               </div>
             </div>
           ))}
