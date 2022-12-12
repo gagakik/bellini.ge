@@ -68,3 +68,9 @@
 .card img:hover {
     transform: scale(1.1) rotate(-2deg);
 }
+
+@media screen and (max-width: 700px) {
+    .cards {
+   grid-template-columns: auto;
+    }
+}

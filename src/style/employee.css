@@ -111,3 +111,9 @@ line-height: 1.5;
     visibility: visible;
 }
 
+@media screen and (max-width: 700px) {
+    .employee:hover {
+        width: 250px;
+        height: 500px;
+    }
+}

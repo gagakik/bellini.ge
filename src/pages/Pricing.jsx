@@ -5,7 +5,6 @@ import Animation from '../components/animation'
 
 const Pricing = () => {
     const [postData, setPost] = useState(null);
-
 	useEffect(() => {
 		SanityClient
 		  .fetch(`*[_type == "cards"] {
@@ -13,7 +12,6 @@ const Pricing = () => {
       description,
             price,
 			mainImage {
-        
 			  asset-> {
 				_id,
 				url
